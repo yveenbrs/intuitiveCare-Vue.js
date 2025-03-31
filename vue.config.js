@@ -1,4 +1,5 @@
 const { defineConfig } = require('@vue/cli-service')
+
 module.exports = {
-  publicPath: '/intuitive_Care-api_Vue/',
+  publicPath: process.env.NODE_ENV === 'production' ? '/intuitiveCare-Vue.js/' : '/'
 }
